@@ -937,5 +937,121 @@ body {
         letter-spacing: 2px;
         margin-top:15%;
     }
+
+    @media screen and (max-width: 300px) {
+    body {
+        background-color: #90aab5;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-section {
+        height: 12vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: relative;
+        background-color: #1f2a30; 
+        z-index: 10;
+    }
+
+
+    #logo {
+        display: flex;
+        font-family: 'Averia Serif Libre';
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 16px;          
+        color: #ffffff;           
+      
+    }
+
+    
+    #menu {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 26px;
+        color: #ffffff;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .navbar-section ul {
+        display: flex; 
+    }
+
+    .image-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        min-height: 180px;
+    }
+
+    .image-section img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
+    .text-section {
+        width: 100vw;
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .text-section ul {
+        flex-direction: column;
+        gap: 2px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-section ul li {
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 2px 0;
+    }
+
+    .quote-section-2 {
+        font-size: px;
+        padding: 5px 20px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100vw;
+        height: auto;
+        font-size: 11px;
+        text-align: center;
+        padding: 6px 0;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #1f2a30; 
+        margin-top: auto;
+    }
 }
 
