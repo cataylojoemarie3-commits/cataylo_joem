@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Grid</title>
+    <link rel="stylesheet" href="contact.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-section">
+          <nav>
+           <span id="menu">&#9776;</span>
+             <ul>
+                <li><a id="logo">My Portfolio</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+             </ul>
+            </nav>
+
+        </div>
+
+        <div id="responsive-nav">
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+         </div>
+
+        <div class="image-section">
+            <img id="img1" src="joem.jpg" alt="">
+        </div>
+
+        <div class="text-section">
+            <ul>
+                 <h1>Contact Me!</h1>
+                <li><i class="fas fa-envelope" style="color:#e74c3c;"></i> Email: <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">cataylojoemarie3@gmail.com</a></li>
+                <li><i class="fab fa-facebook" style="color:#1877f2;"></i> Facebook: <a href="https://www.facebook.com/joemarie.cataylo.2024" target="blank">Joemarie Kadusale Cataylo</a></li>
+                <li><i class="fas fa-phone" style="color:#2ecc71;"></i> #09658047922</li>
+            </ul>
+        </div>
+      
+        <div class="footer-section">
+            <ul>© 2025 My Portfolio by Joemarie Cataylo.</ul>
+        </div>
+    </div>
+
+     <script>
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('responsive-nav');
+
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
